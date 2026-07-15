@@ -1,0 +1,61 @@
+<!-- an index file that contains the core structure and content for the web-page -->
+
+<!DOCTYPE html> <!-- tells the browser that the file uses modern HTML5 -->
+
+<html lang="en"> <!-- specifies the language of the document -->
+
+<head> <!-- stored information about the web-page that is not displayed on the web-page -->
+
+    <meta charset="UTF-8"> <!-- tells the web-page to use UTF-8 encoding supporting letters, numbers, symbols, emojis, and characters from different languages -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- helps the web-page display properly on different devices -->
+
+    <title>Document</title> <!-- controls the title of the web-page displayed in the browser tab -->
+
+    <link rel="stylesheet" href="styles.css"> <!-- links the stylesheet to the web-page -->
+
+</head>
+
+<body> <!-- contains everything that is displayed on the web-page -->
+
+    <!-- the body uses div elements which are general-purpose grouping elements for styling web-pages -->
+
+    <div id="calculator"> <!-- div element for the calculator container -->
+
+        <input id="display" readonly> <!-- creates the screen of the calculator where numbers and results are displayed -->
+
+        <div id="keys"> <!-- div element for the styling of the calculator buttons -->
+
+            <!-- the buttons use onclick events to append values to the display -->
+
+            <!-- the operator-btn class is used for styling operator buttons -->
+
+            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class="operator-btn" >*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()" class="operator-btn">=</button>
+            <button onclick="clearDisplay()" class="operator-btn">C</button>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+     <!-- the script tag is used to link the JavaScript file to the web-page -->
+
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+```html
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+
+    <!-- Defines the character encoding used by the webpage. -->
+    <meta charset="UTF-8" />
+
+    <!-- Makes the webpage responsive on different screen sizes. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Displays the webpage title in the browser tab. -->
+    <title>Lantern Bloom</title>
+
+    <!-- Internal CSS used to style the webpage. -->
+    <style>
+
+      /* Styles the entire webpage. */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        background-color: #faf7f2;
+        color: #222;
+      }
+
+      /* Styles the header section. */
+      header {
+        background-color: #1f2937;
+        color: white;
+        text-align: center;
+        padding: 24px;
+      }
+
+      /* Styles the main image inside the header. */
+      #header-img {
+        width: 100%;
+        max-width: 900px;
+        height: 260px;
+        object-fit: cover;
+        border-radius: 14px;
+        margin-bottom: 16px;
+      }
+
+      /* Adds space above the navigation links. */
+      nav {
+        margin-top: 12px;
+      }
+
+      /* Styles each navigation link. */
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 10px;
+        background-color: rgba(255, 255, 255, 0.15);
+        padding: 8px 14px;
+        border-radius: 20px;
+      }
+
+      /* Styles the main content area. */
+      main {
+        max-width: 900px;
+        margin: 24px auto;
+        padding: 0 16px;
+      }
+
+      /* Styles each main section. */
+      section {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 24px;
+        border-radius: 14px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+      }
+
+      /* Places the menu items inside a responsive grid. */
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 16px;
+      }
+
+      /* Styles each individual menu item. */
+      article {
+        border: 1px solid #eee;
+        padding: 14px;
+        border-radius: 12px;
+      }
+
+      /* Styles the image inside each menu item. */
+      article img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      /* Styles the form labels. */
+      label {
+        font-weight: bold;
+        display: block;
+        margin-top: 10px;
+      }
+
+      /* Styles the quantity number inputs. */
+      input[type="number"] {
+        width: 80px;
+        margin-top: 4px;
+      }
+
+      /* Styles the special requests text area. */
+      textarea {
+        width: 100%;
+        min-height: 80px;
+        margin-top: 6px;
+      }
+
+      /* Styles the checkout button. */
+      input[type="submit"] {
+        background-color: #1f2937;
+        color: white;
+        border: none;
+        padding: 12px 18px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+
+      /* Styles the footer section. */
+      footer {
+        background-color: #111827;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Contains the restaurant image, title, and navigation links. -->
+    <header>
+
+      <!-- Main restaurant header image. -->
+      <img
+        id="header-img"
+        src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1400&q=60"
+        alt="Restaurant food table"
+      />
+
+      <!-- Main webpage heading. -->
+      <h1>Lantern Bloom</h1>
+
+      <!-- Navigation links that move to different sections of the page. -->
+      <nav>
+
+        <a href="#menu">Menu</a>
+
+        <a href="#order-form">Order Form</a>
+
+      </nav>
+
+    </header>
+
+    <!-- Contains the main content of the webpage. -->
+    <main>
+
+      <!-- Menu section. -->
+      <section id="menu">
+
+        <!-- Menu section heading. -->
+        <h2>Menu</h2>
+
+        <!-- Responsive container for the menu items. -->
+        <div class="menu-grid">
+
+          <!-- Golden Lantern Ramen menu item. -->
+          <article>
+
+            <img
+              src="https://i.pinimg.com/1200x/0c/a7/6e/0ca76efd36fb6d74665068867cddbdea.jpg"
+              alt="Ramen bowl"
+            />
+
+            <h3>Golden Lantern Ramen</h3>
+
+            <p>
+
+              Rich broth with handmade noodles, soft egg, and scallions.
+
+              <i>$13.49</i>
+
+            </p>
+
+          </article>
+
+          <!-- Bloom Dumplings menu item. -->
+          <article>
+
+            <img
+              src="https://i.pinimg.com/1200x/14/2e/bf/142ebf34c0138f5fb5b69c909200e0ba.jpg"
+              alt="Dumplings"
+            />
+
+            <h3>Bloom Dumplings</h3>
+
+            <p>
+
+              Pan-seared dumplings filled with pork, ginger, and garlic.
+
+              <i>$8.99</i>
+
+            </p>
+
+          </article>
+
+          <!-- Jasmine Milk Tea menu item. -->
+          <article>
+
+            <img
+              src="https://i.pinimg.com/1200x/26/92/a0/2692a0e44793ec54b109bbe85c41467a.jpg"
+              alt="Jasmine milk tea"
+            />
+
+            <h3>Jasmine Milk Tea</h3>
+
+            <p>
+
+              Fragrant jasmine tea blended with milk and boba pearls.
+
+              <i>$5.25</i>
+
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <!-- Order form section. -->
+      <section id="order-form">
+
+        <!-- Order form heading. -->
+        <h2>Place Your Order</h2>
+
+        <!-- Collects the customer's order information. -->
+        <form>
+
+          <!-- Ramen quantity input. -->
+          <label for="ramen">Golden Lantern Ramen (Qty)</label>
+
+          <input
+            type="number"
+            id="ramen"
+            name="ramen"
+            min="0"
+            value="0"
+          />
+
+          <!-- Dumplings quantity input. -->
+          <label for="dumplings">Bloom Dumplings (Qty)</label>
+
+          <input
+            type="number"
+            id="dumplings"
+            name="dumplings"
+            min="0"
+            value="0"
+          />
+
+          <!-- Milk tea quantity input. -->
+          <label for="tea">Jasmine Milk Tea (Qty)</label>
+
+          <input
+            type="number"
+            id="tea"
+            name="tea"
+            min="0"
+            value="0"
+          />
+
+          <!-- Optional extra egg add-on. -->
+          <label>
+
+            <input
+              type="checkbox"
+              name="addon"
+              value="extra-egg"
+            />
+
+            Extra Egg (+$1)
+
+          </label>
+
+          <!-- Optional extra boba add-on. -->
+          <label>
+
+            <input
+              type="checkbox"
+              name="addon"
+              value="extra-boba"
+            />
+
+            Extra Boba (+$0.75)
+
+          </label>
+
+          <!-- Special requests input. -->
+          <label for="requests">Special Requests</label>
+
+          <textarea
+            id="requests"
+            name="requests"
+            placeholder="Allergies, spice level, or special instructions..."
+          ></textarea>
+
+          <br />
+
+          <br />
+
+          <!-- Submits the completed order form. -->
+          <input
+            type="submit"
+            value="Go To Checkout"
+          />
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <!-- Displays the webpage creator information. -->
+    <footer>
+
+      <p>Made with love by traebracy!</p>
+
+    </footer>
+
+  </body>
+
+</html>
+```
