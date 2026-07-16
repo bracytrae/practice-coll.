@@ -4,10 +4,10 @@ This repository groups my smaller working exercises and learning projects in one
 
 ## Collections
 
-- [`python/`](python/) - Python exercises covering fundamentals, games, files, and object-oriented programming
-- [`java/`](java/) - Java exercises covering methods, classes, parsing, ciphers, and small console programs
-- [`cpp/`](cpp/) - C++ calculator and validation exercises
-- [`web-design/`](web-design/) - HTML, CSS, and JavaScript practice projects
+- [`python/`](python/) - Python exercises 
+- [`java/`](java/) - Java exercises 
+- [`cpp/`](cpp/) - C++ exercises
+- [`web-design/`](web-design/) - HTML, CSS, and JavaScript exercises
 - [`fizz-buzz/`](fizz-buzz/) - FizzBuzz implementations in Python, Java, JavaScript, and C++
 
-These are learning exercises rather than polished portfolio projects. My stronger projects remain featured separately on my GitHub profile.
+These are learning exercises rather than polished portfolio projects. My stronger projects remain featured separately on my GitHub profile and represent knowledge I've learned that I'm implementing.
